@@ -1,0 +1,9 @@
+streamlit
+sentence-transformers
+hazm
+chromadb
+pandas
+torch
+transformers
+accelerate
+bitsandbytes

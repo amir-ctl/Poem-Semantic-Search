@@ -1,0 +1,23 @@
+PoetrySearch/
+│
+├── 🧠_vector_databases/
+│   ├── poetry_db/
+│   │   ├── chroma.sqlite3
+│   │   └── ... (other chroma files)
+│   └── poetry_db_minilm/
+│       ├── chroma.sqlite3
+│       └── ... (other chroma files)
+│
+├──  K_notebooks/
+│   ├── 01_Data_Exploration_and_Viz.ipynb
+│   ├── 02_Model_Benchmark.ipynb
+│   └── 03_Build_Vector_Indexes.ipynb
+│
+├── 📂_data/
+│   ├── ALL_POETS_MERGED.csv
+│   └── POETS_SUMMARY.csv
+│
+├── 🚀_app.py
+├── 🛠️_download_models.py
+├── 📋_requirements.txt
+└── 📖_README.md
