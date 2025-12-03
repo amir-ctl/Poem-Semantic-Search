@@ -6,4 +6,4 @@ pandas
 torch
 transformers
 accelerate
-bitsandbytes
+pysqlite3-binary
