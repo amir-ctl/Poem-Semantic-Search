@@ -1,0 +1,22 @@
+name: Sync Branch to Hugging Face
+on:
+  push:
+    branches: [hf-deploy]  # <--- Only runs when you push to this branch!
+
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+      
+      - name: Push to hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        # This command pushes the CURRENT branch (HEAD) to the remote 'main' branch
+        # Replace YOUR_USERNAME and SPACE_NAME
+        run: git push https://YOUR_HF_USERNAME:$HF_TOKEN@amirgold/Poem-Semantic-Search HEAD:main --force
