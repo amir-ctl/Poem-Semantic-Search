@@ -19,4 +19,4 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         # This command pushes the CURRENT branch (HEAD) to the remote 'main' branch
         # Replace YOUR_USERNAME and SPACE_NAME
-        run: git push https://YOUR_HF_USERNAME:$HF_TOKEN@amirgold/Poem-Semantic-Search HEAD:main --force
+        run: git push https://amirgold:$HF_TOKEN@amirgold/Poem-Semantic-Search HEAD:main --force
